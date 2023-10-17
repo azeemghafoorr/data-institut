@@ -789,6 +789,7 @@ header {
                     z-index: 0;
                     width:90%;
                     height:calc(100% + 40px);
+                    max-height: 320px; //img size + 40px
                     display: block;
                     background-color: $green-color;
                     border-radius: 10px;
@@ -901,12 +902,12 @@ header {
 }
 
 .login-page{
-    width:50%;
+    // width:50%;
+    width: 640px;
     margin:0 auto;
     border-radius: 10px;
     padding:50px;
     box-shadow: 0px 0px 5px #ccc;
-    max-width: 640px;
     .links{
         text-align: center;
         p{
@@ -1247,6 +1248,9 @@ header {
             .block-header{
                 position: relative;
                 margin-bottom: 10px;
+                .d-flex{
+                    align-items: center;
+                }
             }
 
             .block-body{
@@ -1333,7 +1337,7 @@ header {
 
         .my-header{
             .my-header-left{
-                p{margin-bottom: 0 !important}
+                p:not(.mb-2){margin-bottom: 0 !important}
             }
             .btn-close{
                 background: none;
@@ -1350,7 +1354,7 @@ header {
             color:$blue-color;
             font-weight: 400;
         }
-        .form-control{
+        .form-control:not(textarea){
             padding:10px 12px;
             font-size:16px;
             height: 36px;
@@ -1586,30 +1590,46 @@ header {
         border:1px solid $blue-color;
         padding:20px;
         border-radius: 10px;
-        overflow-y: scroll;
-        height:500px;
+        overflow-y: auto;
+        height:1050px;
+        .img-fluid{
+            width:100%;
+        }
     }
     .right-col{
         border:1px solid $blue-color;
         padding:20px;
         border-radius: 10px;
-        overflow-y: scroll;
-        height:500px;
+        overflow-y: auto;
+        height:1050px;
+        .img-fluid{
+            width:100%;
+        }
     }
     .details-col{
         border:1px solid $blue-color;
         padding:20px;
         border-radius: 10px;
         display: flex;
-
+        p{
+            margin-bottom: 20px;
+        }
+        .img-container{
+            height:100%;
+            img{
+                height: 100%;
+                object-fit: cover;
+                border-radius: 7px;
+            }
+        }
     }
     .code-col{
         border:1px solid $blue-color;
         padding:20px;
         border-radius: 10px;
         display: flex;
-        .img-container{
-
+        .img-fluid{
+            width:100%;
         }
     }
 
@@ -1738,7 +1758,10 @@ header {
                     position: absolute;
                     top: -40px;
                     right: -160px;
-                }
+                }                
+                .mobile-only{display: none;}
+                .desktop-only{display: block;}
+                
             }
         }
     }

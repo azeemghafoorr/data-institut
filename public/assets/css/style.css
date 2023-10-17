@@ -765,6 +765,7 @@ header .btn-brand {
   z-index: 0;
   width: 90%;
   height: calc(100% + 40px);
+  max-height: 320px;
   display: block;
   background-color: #A5F8D3;
   border-radius: 10px;
@@ -870,12 +871,11 @@ header .btn-brand {
 }
 
 .login-page {
-  width: 50%;
+  width: 640px;
   margin: 0 auto;
   border-radius: 10px;
   padding: 50px;
   box-shadow: 0px 0px 5px #ccc;
-  max-width: 640px;
 }
 .login-page .links {
   text-align: center;
@@ -1232,6 +1232,9 @@ header .btn-brand {
   position: relative;
   margin-bottom: 10px;
 }
+.catalog .catalog-blocks .block .block-header .d-flex {
+  align-items: center;
+}
 .catalog .catalog-blocks .block .block-body {
   margin-bottom: 20px;
 }
@@ -1314,7 +1317,7 @@ header .btn-brand {
 .custom-modal .modal-body {
   padding: 32px;
 }
-.custom-modal .modal-body .my-header .my-header-left p {
+.custom-modal .modal-body .my-header .my-header-left p:not(.mb-2) {
   margin-bottom: 0 !important;
 }
 .custom-modal .modal-body .my-header .btn-close {
@@ -1333,7 +1336,7 @@ header .btn-brand {
   color: #003467;
   font-weight: 400;
 }
-.custom-modal .modal-body .form-control {
+.custom-modal .modal-body .form-control:not(textarea) {
   padding: 10px 12px;
   font-size: 16px;
   height: 36px;
@@ -1583,15 +1586,21 @@ header .btn-brand {
   border: 1px solid #003467;
   padding: 20px;
   border-radius: 10px;
-  overflow-y: scroll;
-  height: 500px;
+  overflow-y: auto;
+  height: 1050px;
+}
+.learning .left-col .img-fluid {
+  width: 100%;
 }
 .learning .right-col {
   border: 1px solid #003467;
   padding: 20px;
   border-radius: 10px;
-  overflow-y: scroll;
-  height: 500px;
+  overflow-y: auto;
+  height: 1050px;
+}
+.learning .right-col .img-fluid {
+  width: 100%;
 }
 .learning .details-col {
   border: 1px solid #003467;
@@ -1599,12 +1608,28 @@ header .btn-brand {
   border-radius: 10px;
   display: flex;
 }
+.learning .details-col p {
+  margin-bottom: 20px;
+}
+.learning .details-col .img-container {
+  height: 100%;
+}
+.learning .details-col .img-container img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+}
 .learning .code-col {
   border: 1px solid #003467;
   padding: 20px;
   border-radius: 10px;
   display: flex;
 }
+.learning .code-col .img-fluid {
+  width: 100%;
+}
+
 .payment {
   margin-top: 170px;
 }
@@ -1738,6 +1763,12 @@ header .btn-brand {
   position: absolute;
   top: -40px;
   right: -160px;
+}
+.pricing .text-container .button-row .save-text .mobile-only {
+  display: none;
+}
+.pricing .text-container .button-row .save-text .desktop-only {
+  display: block;
 }
 .pricing .pricing-row {
   margin-top: 100px;

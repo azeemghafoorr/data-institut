@@ -5,8 +5,10 @@ const OffCanvas = () => {
         <div className="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div className="offcanvas-header text-center">
                 <img className="user-image mb-4" src="/assets/images/dashboard-user-main.png" alt="" />
+                <div className="text-container">
                 <h4 className="font-nokora">Devon Lane</h4>
                 <p>Developer, Los Angeles, CA</p>
+                </div>
             </div>
             <div className="offcanvas-body">
                 <h4 className="font-nokora">Reminder</h4>

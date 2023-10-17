@@ -6,10 +6,10 @@ function Footer() {
         <div className="footer">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-3">
-                        <img src="/assets/images/logo.svg" alt="Logo" />
+                    <div className="col-lg-3">
+                        <img className="footer-logo" src="/assets/images/logo.svg" alt="Logo" />
                     </div>
-                    <div className="col-md-9">
+                    <div className="col-lg-9">
                         <div className="d-flex justify-content-between">
                             <div className="my-column links">
                                 <h6>About</h6>
@@ -52,10 +52,10 @@ function Footer() {
 
                 <div className="footer-bottom">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6">
                             <p><small>All rights reserved 2023 - Data Institut, Inc.</small></p>
                         </div>
-                        <div className="col-md-9">
+                        <div className="col-lg-9 col-md-6">
                             <div className="d-flex justify-content-between">
                                 <div>
                                     <a href="" className="me-2">Terms of Use</a>

@@ -5,7 +5,7 @@ function Hero() {
         <section className="hero">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 order-1 order-md-0">
                         <div className="left-col">
                             <div className="text-container">
                                 <h1 className="font-bebas">UNLOCK YOUR<br/>POTENTIAL</h1>
@@ -28,7 +28,7 @@ function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 order-0 order-md-1">
                         <div className="right-col">
                             <img className="img-fluid" src="/assets/images/hero-img.png" alt="Hero Image" />
                         </div>

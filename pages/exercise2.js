@@ -29,12 +29,12 @@ function Dashboard() {
 
                     <div className="details-col mb-5">
                         <div className="row">
-                            <div className="col-md-4">
+                            <div className="col-lg-4">
                                 <div className="img-container">
                                     <img className="img-fluid mb-3" src="/assets/images/learning-media-img.jpg" alt=""/>
                                 </div>
                             </div>
-                            <div className="col-md-8">
+                            <div className="col-lg-8">
                                 <div className="text-container">
                                     <h5 className="mb-3"><b>Understanding Database Relationships</b></h5>
                                     <p>Understanding database relationships is crucial for designing efficient and

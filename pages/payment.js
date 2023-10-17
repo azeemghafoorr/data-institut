@@ -11,7 +11,7 @@ function CourseDetail() {
             <div className="payment">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="order-1 order-lg-0 col-lg-6">
                             <div className="left-col">
                                 <div className="express-checkout">
                                     <p>Express Checkout</p>
@@ -74,10 +74,10 @@ function CourseDetail() {
                                         </div>
                                         <div className="col-md-12">
                                             <div className="row pb-2 mt-4 mb-2 border-bottom">
-                                                <div className="col-md-6">
+                                                <div className="col-xs-9 col-sm-9">
                                                     <p>Premium Monthly Subscription</p>
                                                 </div>
-                                                <div className="col-md-6">
+                                                <div className="col-xs-3 col-sm-3">
                                                     <p className="float-end"> <b> $18/mo</b></p>
                                                 </div>
                                             </div>
@@ -88,17 +88,17 @@ function CourseDetail() {
                                                     <input type="email" className="form-control" id="" placeholder="" />
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <button className="btn btn-brand btn-48">APPLY</button>
+                                                    <button className="btn btn-brand btn-48 mt-fix">APPLY</button>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div className="col-md-12">
                                             <div className="row border-top pt-1 mb-3">
-                                                <div className="col-md-6">
+                                                <div className="col">
                                                     <p><b>Subtotal:</b></p>
                                                 </div>
-                                                <div className="col-md-6">
+                                                <div className="col">
                                                     <p className="float-end"> <b> $18/mo</b></p>
                                                 </div>
                                             </div>
@@ -112,7 +112,7 @@ function CourseDetail() {
                             </div>
                         </div>
 
-                        <div className="col-md-6">
+                        <div className="order-0 order-lg-1 col-lg-6">
                             <div className="right-col">
                                 <img className="sale-banner" src="/assets/images/sale-payment-banner.svg" alt="" />
                                 <h4><b>Premium</b></h4>

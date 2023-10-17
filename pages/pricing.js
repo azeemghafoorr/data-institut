@@ -37,7 +37,7 @@ function HomePage() {
                     </div>
 
                     <div className="row pricing-row">
-                        <div className="col-md-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="pricing-col">
                                 <div className="inner-container">
                                     <h4 className="mb-2"><b>Standard</b></h4>
@@ -66,7 +66,7 @@ function HomePage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="pricing-col active">
                                 <div className="inner-container">
                                     <img className="sale-banner" src="/assets/images/sale-payment-banner.svg" alt=""/>
@@ -96,7 +96,7 @@ function HomePage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="pricing-col">
                                 <div className="inner-container">
                                     <h4 className="mb-2"><b>Standard</b></h4>

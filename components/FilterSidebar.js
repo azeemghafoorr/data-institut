@@ -18,25 +18,29 @@ const FilterSidebar = () => {
                             Career Path
                         </label>
                     </div>
+
+                    <div className="form-check mb-3">
+                        <input className="form-check-input" type="checkbox" value="" />
+                        <label className="form-check-label">
+                            Skill Path
+                        </label>
+                    </div>
+                    <div className="form-check mb-3">
+                        <input className="form-check-input" type="checkbox" value="" />
+                        <label className="form-check-label">
+                            Level
+                        </label>
+                    </div>
+                    <div className="form-check mb-3">
+                        <input className="form-check-input" type="checkbox" value="" />
+                        <label className="form-check-label">
+                            Newest
+                        </label>
+                    </div>
+
+
                 </div>
-                <div className="form-check mb-3">
-                    <input className="form-check-input" type="checkbox" value="" />
-                    <label className="form-check-label">
-                        Skill Path
-                    </label>
-                </div>
-                <div className="form-check mb-3">
-                    <input className="form-check-input" type="checkbox" value="" />
-                    <label className="form-check-label">
-                        Level
-                    </label>
-                </div>
-                <div className="form-check mb-3">
-                    <input className="form-check-input" type="checkbox" value="" />
-                    <label className="form-check-label">
-                        Newest
-                    </label>
-                </div>
+
             </div>
         </div>
     );
